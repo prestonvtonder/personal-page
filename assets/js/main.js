@@ -10,7 +10,7 @@ $(window).on('load', function () {
       }, 1000);
       animateRadialGraphs('.circle-progress path:last-child');
       animateLineGraphs('.line-progress path:last-child', 1500);
-      animateStats('.counter', 3000);
+      animateStats('.counter', 2000);
     },
     duration: 2000
   });
@@ -23,14 +23,18 @@ $(window).on('load', function () {
     projects: '.projects-container .section-title',
     contact: '.contact-container .section-title'
   }
+
   let typeProps = {
+    // number of errors
     e: 0,
+    // speed
     t: 80
   }
+
   $('.menu-item a').click(function (e) { 
     e.preventDefault();
     let command = $(this).html();
-    collapseMenu('.menu-bar-btn');
+    collapseMenu();
     if ($('.content').scrollTop() === 0) {
       typeCommand(command, 1000);
       setTimeout(function() {
@@ -42,9 +46,9 @@ $(window).on('load', function () {
     }
   });
 
-  function collapseMenu(menuBarBtn) {
-    $(menuBarBtn).removeClass('toggled');
-    $(menuBarBtn).find('.menu-icon').removeClass('active');
+  function collapseMenu() {
+    $('.menu-bar-btn').removeClass('toggled');
+    $('.menu-bar-btn').find('.menu-icon').removeClass('active');
     $('.menu-items').removeClass('active');
     $('.menu-bar').css('width', '80px');
     $('.curtain').css('opacity', '0')
@@ -54,6 +58,14 @@ $(window).on('load', function () {
       .css('overflow-y', 'scroll')
       .find('.curtain')
       .css('opacity', '0');
+  }
+
+  function collapseInfoBar() {
+    $('.info-bar').css({
+      'transform': 'translateX(-306px)'
+    }, 550);
+    $('.curtain').css('opacity', '0')
+                 .css('z-index', '0');
   }
 
   function typeCommand(command, ms) {
@@ -115,24 +127,28 @@ $(window).on('load', function () {
   }
 
   function animateStat(selector, ms) {
-    jQuery({someValue: 0}).animate({someValue: $(selector).data("value")}, {
+    jQuery({val: 0}).animate({val: $(selector).data("value")}, {
       duration: ms,
-      easing:'swing', // can be anything
-      step: function(now) { // called on every step
-          // Update the element's text with rounded-up value:
-          $(selector).text(`${Math.ceil(now)}`);
+      easing:'swing', 
+      step: function(now) { 
+        $(selector).text(`${Math.ceil(now)}`);
       }
     });
   }
 
-  $('.explore-now-btn .btn-md').click(function (e) { 
+  $('.info-bar-btn').click(function (e) { 
     e.preventDefault();
-    console.log('click');
     $('.info-bar').css({
       'transform': 'translateX(0px)'
-    }, 1000);
+    });
     $('.curtain').css('opacity', '.7')
                  .css('z-index', '8');
   });
+
+  $('.curtain').click(function (e) {
+    e.preventDefault();
+    collapseMenu();
+    collapseInfoBar();
+  })
 
 });

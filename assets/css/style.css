@@ -18,6 +18,13 @@ body {
   background: #191923;
 }
 
+@media(max-width: 1024px) {
+  body {
+    overflow: hidden;
+    padding: 0;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -62,6 +69,17 @@ a:hover {
   margin: auto;
   grid-template-columns: 290px 14fr 150px 80px;
   box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+}
+@media(max-width: 1024px) {
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+  }
 }
 
 .preloader {
@@ -134,7 +152,8 @@ a:hover {
 @media(max-width: 1024px) {
   .info-bar {
     display: grid;
-    height: calc(100vh - 35px);
+    width: 290px;
+    height: 100vh;
     grid-template-rows: 235px 1fr 50px;
     transform: translateX(-306px);
     z-index: 8;
@@ -258,10 +277,6 @@ a:hover {
 		transform: scale(1);
 		opacity: 0
 	}
-}
-
-.info {
-  /* grid-area: 1 / 1 / 3 / 2; */
 }
 
 .info-frame {
@@ -431,6 +446,49 @@ a:hover {
   transition: .55s ease-in-out;
 }
 
+.mobile-menu {
+  grid-area: 1 / 1 / 2 / 2;
+  position: fixed;
+  z-index: 7;
+  width: 100vw;
+  height: 70px;
+  background: #20202a;
+  padding: 0 30px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 1024px) {
+  .menu-bar {
+    grid-area: 1 / 1 / 3 / 2;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    background: #20202a;
+    width: 80px;
+    z-index: 8;
+    transition: .55s ease-in-out;
+    transform: translateX(80px);
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu > .info-bar-btn {
+    color: #8c8c8e;
+  }
+
+  .mobile-menu > .menu-bar-btn {
+    padding: 0 8px;
+  }
+
+  .menu-bar-btn-container > .menu-bar-btn {
+    display: none;
+  }
+}
+
 .menu-items.active .menu-item {
   visibility: visible;
 }
@@ -548,8 +606,6 @@ button:focus {
   letter-spacing: 1px;
   font-weight: 500;
   visibility: hidden;
-  /* transition: .1s ease-in-out; */
-  /* animation: fly-out .55s ease-out; */
 }
 
 .menu-item.active a,
@@ -609,14 +665,14 @@ button:focus {
 
 @media(max-width: 1024px) {
   .content {
-  grid-area: 1 / 1 / 2 / 5;
-  background: rgba(30, 30, 40, .88);
-  display: grid;
-  position: relative;
-  overflow: auto;
-  grid-template-rows: 446px 1fr;
-  transition: .55s ease-in-out;
-  z-index: 0;
+    grid-area: 2 / 1 / 3 / 5;
+    background: rgba(30, 30, 40, .88);
+    display: grid;
+    position: relative;
+    overflow: auto;
+    grid-template-rows: 446px 1fr;
+    transition: .55s ease-in-out;
+    z-index: 0;
   }
 }
 
@@ -661,7 +717,7 @@ button:focus {
 
 @media(max-width: 1024px) {
   .top-bg {
-    grid-area: 1 / 1 / 2 / 5;
+    grid-area: 2 / 1 / 3 / 5;
     width: 100%;
     height: 446px;
     overflow: hidden;
