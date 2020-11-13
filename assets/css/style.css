@@ -70,6 +70,7 @@ a:hover {
   grid-template-columns: 290px 14fr 150px 80px;
   box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
 }
+
 @media(max-width: 1024px) {
   .container {
     display: grid;
@@ -77,8 +78,9 @@ a:hover {
     height: 100vh;
     margin: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 70px calc(100vh - 70px);
     box-shadow: 0 3px 8px 0 rgba(15,15,20,.2);
+    overflow: hidden;
   }
 }
 
@@ -95,7 +97,14 @@ a:hover {
   align-items: center;
   justify-content: center;
   transition: .55s ease-in-out;
-  /* display: none; */
+}
+
+@media(max-width: 1024px) {
+  .preloader {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .preloader__content {
@@ -737,11 +746,9 @@ button:focus {
 }
 
 .banner-container {
-  /* padding: 0 30px; */
   padding-top: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  /* grid-row-start: content-start; */
 }
 
 .banner {
@@ -751,7 +758,6 @@ button:focus {
   background-position: center;
   margin-bottom: 15px;
   border-radius: 3px;
-  /* overflow: hidden; */
   z-index: 8;
 }
 
@@ -804,20 +810,10 @@ button:focus {
   margin-right: 5px;
 }
 
-/* .code i::before {
-  color: #fafafc;
-  content: "<";
-} */
-
 .code .tag-close::before {
   color: #fafafc;
   content: "</";
 }
-
-/* .code i::after {
-  color: #fafafc;
-  content: ">";
-} */
 
 .cursor {
   animation: blink .75s linear infinite alternate;
