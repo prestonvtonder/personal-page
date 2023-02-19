@@ -664,7 +664,6 @@ button:focus {
 .content {
   grid-area: 1 / 2 / 2 / 4;
   background: rgba(30, 30, 40, .88);
-  display: grid;
   position: relative;
   overflow: auto;
   grid-template-rows: 446px 1fr;
@@ -1078,10 +1077,6 @@ footer {
 
 .swiper-container {
   width: 100%;
-}
-
-.carousel-grid {
-  display: grid;
 }
 
 .swiper-slide {
