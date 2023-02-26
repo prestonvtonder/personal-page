@@ -70,7 +70,7 @@ body {
 }
 
 .pill {
-    background-color: #edff20;
+    background-color: #78cc6d;
     border: none;
     color: #323232;
     font-size: .8rem;
@@ -226,6 +226,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(120, 204, 109, .4)
+}
+
+.background.gradient {
+    background: linear-gradient(to bottom right,#50a3a2 0%,#78cc6d 100%);
 }
 
 .row {
@@ -1289,8 +1293,8 @@ input[type=file] {
 
 .background.gradient {
     background: rgba(120, 204, 109, .7);
-    background: -webkit-linear-gradient(top left, #6da066 0%, #78cc6d 100%);
-    background: linear-gradient(to bottom right, #6da066 0%, #78cc6d 100%);
+    background: linear-gradient(to bottom right,#50a3a2 0%,#78cc6d 100%);
+    background: linear-gradient(to bottom right,#50a3a2 0%,#78cc6d 100%);
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -1445,38 +1449,45 @@ input[type=file] {
     visibility: visible !important
 }
 
-.header .menu-btn {
+.header .theme-btn {
     margin-bottom: 8px;
     position: relative;
-    display: block;
-    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 67px;
     text-align: center;
     background: #fff;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     -khtml-border-radius: 4px;
-    z-index: 2
 }
 
-.header .menu-btn span {
-    margin-left: -13px;
-    margin-top: -1px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    display: block;
-    width: 26px;
-    height: 2px;
-    background: #323232;
+.header .theme-btn:hover {
+    cursor: pointer;
+}
+
+.header .theme-btn span {
+    color: #323232;
+}
+
+.header .theme-btn span {
+    font-size: larger;
     transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -webkit-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s
 }
 
-.header .menu-btn span:before,
-.header .menu-btn span:after {
+.header .theme-btn:hover span,
+.header .theme-btn:hover span:before,
+.header .theme-btn:hover span:after {
+    color: #78cc6d
+}
+
+/* .header .theme-btn span:before,
+.header .theme-btn span:after {
     content: '';
     position: absolute;
     left: 0;
@@ -1490,25 +1501,25 @@ input[type=file] {
     -o-transition: all .3s ease 0s
 }
 
-.header .menu-btn span:after {
+.header .theme-btn span:after {
     top: auto;
     bottom: -7px;
     width: 60%
 }
 
-.header .menu-btn:hover span,
-.header .menu-btn:hover span:before,
-.header .menu-btn:hover span:after {
+.header .theme-btn:hover span,
+.header .theme-btn:hover span:before,
+.header .theme-btn:hover span:after {
     background: #78cc6d
 }
 
-.header .menu-btn:hover span:before {
+.header .theme-btn:hover span:before {
     width: 100%
 }
 
-.header .menu-btn:hover span:after {
+.header .theme-btn:hover span:after {
     width: 100%
-}
+} */
 
 .header .top-menu {
     width: 100%;
@@ -1549,7 +1560,6 @@ input[type=file] {
 
 .header .top-menu ul li a {
     position: relative;
-    overflow: hidden;
     display: block;
     height: auto;
     color: #323232;
@@ -1594,7 +1604,7 @@ input[type=file] {
     -o-transition: all .3s ease 0s
 }
 
-.header .top-menu ul li a .link {
+/* .header .top-menu ul li a .link {
     position: absolute;
     left: 0;
     top: 57%;
@@ -1607,6 +1617,34 @@ input[type=file] {
     -moz-transition: all .3s ease 0s;
     -webkit-transition: all .3s ease 0s;
     -o-transition: all .3s ease 0s
+} */
+
+.header .top-menu.menu-minimal ul li a .link {
+    position: absolute;
+    left: 65%;
+    top: 45%;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #78cc6d;
+    transition: .3s ease 0s;
+    padding: 3px 7px;
+    margin-top: -11px;
+    opacity: 0;
+    width: auto;
+    line-height: 17px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.header .top-menu.menu-minimal ul li a:hover .link {
+    left: 75%;
+    opacity: 1;
+}
+
+.header .top-menu.menu-minimal ul li a:before {
+	display: none;
 }
 
 .header .top-menu ul li a ul {
@@ -1614,15 +1652,14 @@ input[type=file] {
 }
 
 .header .top-menu ul li:hover a,
-.header .top-menu ul li.active a {
+.header .top-menu ul li:hover a .icon,
+.header .top-menu ul li.active a,
+.header .top-menu ul li.active a .icon {
     color: #78cc6d
 }
 
-.header .top-menu ul li:hover a .icon,
-.header .top-menu ul li:hover a .link,
-.header .top-menu ul li.active a .icon,
-.header .top-menu ul li.active a .link {
-    color: #78cc6d
+.header .top-menu ul li:hover a .link {
+    color: #323232
 }
 
 @media(max-width:1023px) {
@@ -1688,7 +1725,7 @@ input[type=file] {
     }
 }
 
-.disable-sidebar .header .menu-btn {
+.disable-sidebar .header .theme-btn {
     height: 0;
     visibility: hidden;
     opacity: 0
@@ -5088,10 +5125,10 @@ input[type=file] {
     padding: 0 5px;
     font-size: 13px;
     line-height: 18px;
-    color: #ccc;
+    color: darkgray;
     font-weight: 400;
     text-transform: none;
-    border: 1px solid #eee
+    border: 1px solid darkgray
 }
 
 .resume-items .resume-item .date:before {

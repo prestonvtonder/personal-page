@@ -52,24 +52,26 @@
     <!-- Template Dark -->
     <link
       rel="stylesheet"
-      href="https://ryan-cv-hugo.netlify.app/plugins/template-dark/dark.css"
+      href="/assets/css/dark.css"
+      disabled
     />
 
-    <!-- Template RTL -->
+    <!-- Template Minimal -->
     <link
       rel="stylesheet"
-      href="https://ryan-cv-hugo.netlify.app/plugins/template-minimal/minimal-skin.css"
+      href="/assets/css/minimal.css"
+      disabled
     />
 
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      href="https://ryan-cv-hugo.netlify.app/images/favicon/favicon.ico"
+      href="/assets//images/favicon/favicon.ico"
       type="image/x-icon"
     />
     <link
       rel="icon"
-      href="https://ryan-cv-hugo.netlify.app/images/favicon/favicon.ico"
+      href="/assets/images/favicon/favicon.ico"
       type="image/x-icon"
     />
 
@@ -102,6 +104,20 @@
       </div>
 
       <!-- Background -->
+      <div class="background gradient">
+        <ul class="bg-bubbles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div class="blured-background">
         <span></span>
         <span></span>
@@ -259,6 +275,12 @@
         data-animation-out="fadeOut"
       >
         <header class="header">
+          <div class="theme-btn">
+            <a href="#">
+              <span class="icon fa fa-sun"></span>
+              <span class="icon fa fa-moon"></span>
+            </a>
+          </div>
           <!-- menu -->
           <div class="top-menu menu-minimal">
             <ul>
@@ -711,44 +733,6 @@
               <div class="title">Education</div>
 
               <div class="row">
-                <!-- experience -->
-                <!-- <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                  <div class="resume-title border-line-h">
-                    <div class="icon"><i class="ion ion-briefcase"></i></div>
-                    <div class="name">Experience</div>
-                  </div>
-                  <div class="resume-items">
-                    <div class="resume-item border-line-h active">
-                      <div class="date">2013 - Present</div>
-                      <div class="name">Art Director</div>
-                      <div class="company">Facebook Inc.</div>
-                      <p>
-                        Collaborate with creative and development teams on the
-                        execution of ideas.
-                      </p>
-                    </div>
-
-                    <div class="resume-item border-line-h">
-                      <div class="date">2011 - 2012</div>
-                      <div class="name">Front-end Developer</div>
-                      <div class="company">Google Inc.</div>
-                      <p>
-                        Monitored technical aspects of the front-end delivery
-                        for several projects.
-                      </p>
-                    </div>
-
-                    <div class="resume-item">
-                      <div class="date">2009 - 2010</div>
-                      <div class="name">Senior Developer</div>
-                      <div class="company">Abc Inc.</div>
-                      <p>
-                        Optimize website performance using latest technology.
-                      </p>
-                    </div>
-                  </div>
-                </div> -->
-
                 <!-- education -->
                 <!-- <div class="col col-d-6 col-t-6 col-m-12 border-line-v"> -->
                 <div class="col col-m-12 border-line-v">
@@ -772,20 +756,19 @@
                       <div class="name">University of Pretoria</div>
                       <div class="company">Pretoria</div>
                       <div class="pill">Cum Laude</div>
-                      <p>
-                        Bachelor of Science Degree in Applied Mathematics.
-                      </p>
+                      <p>Bachelor of Science Degree in Applied Mathematics.</p>
                     </div>
 
                     <div class="resume-item border-line-h">
-                      <div class="date">2005 - 2006</div>
-                      <div class="name">Programming Course</div>
-                      <div class="company">Paris</div>
+                      <div class="date">2013 - 2017</div>
+                      <div class="name">Jeppe High School for Boys</div>
+                      <div class="company">Johannesburg</div>
+                      <div class="pill">Dux Scholar</div>
                       <p>
-                        Coursework - Git, WordPress, Javascript, iOS, Android.
+                        National Senior Certificate and Independent Examination
+                        Board Certificate.
                       </p>
                     </div>
-
                   </div>
                 </div>
 
@@ -793,171 +776,243 @@
               </div>
             </div>
 
-            <!-- Skills -->
+            <!-- Certifications -->
             <div class="content skills">
               <div class="title">Certifications</div>
 
-              <div class="row">
-                <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                  <div class="skills-list default">
-                    <div class="skill-title border-line-h">
-                      <div class="icon"><i class="ion ion-easel"></i></div>
-                      <div class="name">Design</div>
+              <div class="row client-items">
+                <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                  <div class="client-item">
+                    <div class="image">
+                      <a
+                        target="_blank"
+                        href="https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
+                        title="Microsoft Azure Fundamentals"
+                      >
+                        <img
+                          src="/assets/images/certifications/colour/microsoft-certified-fundamentals-badge.png"
+                          alt="Microsoft Azure Fundamentals Badge"
+                        />
+                      </a>
                     </div>
-                    <ul>
-                      <li class="border-line-h">
-                        <div class="name">Web Design</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 90%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">Write Music</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 65%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">Photoshop</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 75%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">Graphic Design</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 85%"></div>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
 
-                <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                  <div class="skills-list dotted">
-                    <div class="skill-title border-line-h">
-                      <div class="icon"><i class="ion ion-flag"></i></div>
-                      <div class="name">Languages</div>
+                <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                  <div class="client-item">
+                    <div class="image">
+                      <a
+                        target="_blank"
+                        href="https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+                        title="AWS Certified Solutions Architect"
+                      >
+                        <img
+                          src="/assets/images/certifications/colour/aws-certified-solutions-architect-associate-badge.png"
+                          alt="AWS Certified Solutions Architect Badge"
+                        />
+                      </a>
                     </div>
-                    <ul>
-                      <li class="border-line-h">
-                        <div class="name">English</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 90%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">German</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 60%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">Italian</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 30%"></div>
-                        </div>
-                      </li>
-
-                      <li class="border-line-h">
-                        <div class="name">French</div>
-                        <div class="progress">
-                          <div class="percentage" style="width: 70%"></div>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
 
-                <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                  <div class="skills-list circles">
-                    <div class="skill-title border-line-h">
-                      <div class="icon"><i class="ion ion-code"></i></div>
-                      <div class="name">Coding</div>
+                <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                  <div class="client-item">
+                    <div class="image">
+                      <a
+                        target="_blank"
+                        href="https://aws.amazon.com/certification/certified-developer-associate/"
+                        title="AWS Certified Developer"
+                      >
+                        <img
+                          src="/assets/images/certifications/colour/aws-certified-developer-associate-badge.png"
+                          alt="AWS Certified Developer Badge"
+                        />
+                      </a>
                     </div>
-                    <ul>
-                      <li>
-                        <div class="name">WordPress</div>
-                        <div class="progress p90">
-                          <span>90%</span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="name">PHP / MYSQL</div>
-                        <div class="progress p75">
-                          <span>75%</span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="name">Angular / JavaScript</div>
-                        <div class="progress p85">
-                          <span>85%</span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div class="name">HTML / CSS</div>
-                        <div class="progress p95">
-                          <span>95%</span>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
 
-                <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                  <div class="skills-list list">
-                    <div class="skill-title border-line-h">
-                      <div class="icon">
-                        <i class="ion ion-android-list"></i>
-                      </div>
-                      <div class="name">Knowledge</div>
+                <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                  <div class="client-item">
+                    <div class="image">
+                      <a
+                        target="_blank"
+                        href="https://www.hashicorp.com/certification/terraform-associate-next"
+                        title="Terraform Associate"
+                      >
+                        <img
+                          src="/assets/images/certifications/colour/terraform-associate-badge.png"
+                          alt="Terraform Associate Badge"
+                        />
+                      </a>
                     </div>
-                    <ul>
-                      <li>
-                        <div class="name">Website hosting</div>
-                      </li>
-
-                      <li>
-                        <div class="name">iOS and android apps</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Create logo design</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Design for print</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Modern and mobile-ready</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Advertising services include</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Graphics and animations</div>
-                      </li>
-
-                      <li>
-                        <div class="name">Search engine marketing</div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
 
                 <div class="clear"></div>
               </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                <div class="skills-list default">
+                  <div class="skill-title border-line-h">
+                    <div class="icon"><i class="ion ion-easel"></i></div>
+                    <div class="name">Design</div>
+                  </div>
+                  <ul>
+                    <li class="border-line-h">
+                      <div class="name">Web Design</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 90%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Write Music</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 65%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Photoshop</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 75%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Graphic Design</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 85%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                <div class="skills-list dotted">
+                  <div class="skill-title border-line-h">
+                    <div class="icon"><i class="ion ion-flag"></i></div>
+                    <div class="name">Languages</div>
+                  </div>
+                  <ul>
+                    <li class="border-line-h">
+                      <div class="name">English</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 90%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Afrikaans</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 70%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Dutch</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 50%"></div>
+                      </div>
+                    </li>
+
+                    <li class="border-line-h">
+                      <div class="name">Bulgarian</div>
+                      <div class="progress">
+                        <div class="percentage" style="width: 20%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                <div class="skills-list circles">
+                  <div class="skill-title border-line-h">
+                    <div class="icon"><i class="ion ion-code"></i></div>
+                    <div class="name">Coding</div>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="name">WordPress</div>
+                      <div class="progress p90">
+                        <span>90%</span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="name">PHP / MYSQL</div>
+                      <div class="progress p75">
+                        <span>75%</span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="name">Angular / JavaScript</div>
+                      <div class="progress p85">
+                        <span>85%</span>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="name">HTML / CSS</div>
+                      <div class="progress p95">
+                        <span>95%</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                <div class="skills-list list">
+                  <div class="skill-title border-line-h">
+                    <div class="icon">
+                      <i class="ion ion-android-list"></i>
+                    </div>
+                    <div class="name">Knowledge</div>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="name">Website hosting</div>
+                    </li>
+
+                    <li>
+                      <div class="name">iOS and android apps</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Create logo design</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Design for print</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Modern and mobile-ready</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Advertising services include</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Graphics and animations</div>
+                    </li>
+
+                    <li>
+                      <div class="name">Search engine marketing</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="clear"></div>
             </div>
           </div>
         </div>
@@ -965,672 +1020,144 @@
         <div class="card-inner" id="experience-card">
           <div class="card-wrap">
             <!-- Works -->
-            <div class="content works">
+            <div class="content resume">
               <div class="title">Experience</div>
 
-              <div class="filter-menu filter-button-group">
-                <div class="f_btn active">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="grid-item"
-                    />All</label
-                  >
-                </div>
+              <div class="row">
+                <div class="col col-m-12">
+                  <div class="resume-items">
+                    <div class="resume-item border-line-h active">
+                      <div class="date">2021 - Present</div>
+                      <div class="name">Platform Engineer</div>
+                      <div class="company">Investec Bank Limited</div>
+                      <p>
+                        Collaborate with creative and development teams on the
+                        execution of ideas.
+                      </p>
+                    </div>
 
-                <div class="f_btn">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="photo"
-                    />Photo</label
-                  >
-                </div>
+                    <div class="resume-item border-line-h">
+                      <div class="date">2020 - 2021</div>
+                      <div class="name">Research Assistant</div>
+                      <div class="company">University of Pretoria</div>
+                      <p>
+                        Monitored technical aspects of the front-end delivery
+                        for several projects.
+                      </p>
+                    </div>
 
-                <div class="f_btn">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="video"
-                    />Video</label
-                  >
-                </div>
-
-                <div class="f_btn">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="music"
-                    />Music</label
-                  >
-                </div>
-
-                <div class="f_btn">
-                  <label
-                    ><input
-                      type="radio"
-                      name="fl_radio"
-                      value="design"
-                    />Design</label
-                  >
+                    <div class="resume-item">
+                      <div class="date">2009 - 2010</div>
+                      <div class="name">Senior Developer</div>
+                      <div class="company">Abc Inc.</div>
+                      <p>
+                        Optimize website performance using latest technology.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="row grid-items border-line-v">
-                <!-- content -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="#popup-afa157b8f319ea0c1d9c22e30d1ab752"
-                        class="has-popup-media"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work8.jpg"
-                          alt=""
-                        />
-                        <span class="info">
-                          <span class="ion ion-images"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="#popup-afa157b8f319ea0c1d9c22e30d1ab752"
-                        class="name has-popup-media"
-                        >Business Card Design</a
-                      >
-                      <div class="category">Design</div>
-                    </div>
-                    <div
-                      id="popup-afa157b8f319ea0c1d9c22e30d1ab752"
-                      class="popup-box mfp-fade mfp-hide"
-                    >
-                      <div class="content">
-                        <div class="image">
-                          <img
-                            src="https://ryan-cv-hugo.netlify.app/images/works/work8.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="desc">
-                          <div class="post-box">
-                            <h1>Business Card Design</h1>
-                            <div class="blog-detail">Design</div>
-                            <div class="blog-content">
-                              <p>
-                                So striking at of to welcomed resolved.
-                                Northward by described up household therefore
-                                attention. Excellence decisively nay man yet
-                                impression for contrasted remarkably.
-                              </p>
-                              <p>
-                                Forfeited you engrossed but gay sometimes
-                                explained. Another as studied it to evident.
-                                Merry sense given he be arise. Conduct at an
-                                replied removal an amongst. Remaining determine
-                                few her two cordially admitting old.
-                              </p>
-                              <p>
-                                ^Vestibulum ante ipsum primis in faucibus orci
-                                luctus et ultrices posuere cubilia Curae;
-                                Pellentesque suscipit.
-                              </p>
-                              <p>
-                                Tiled say decay spoil now walls meant house. My
-                                mr interest thoughts screened of outweigh
-                                removing. Evening society musical besides
-                                inhabit ye my. Lose hill well up will he over
-                                on. Increasing sufficient everything men him
-                                admiration unpleasing.
-                              </p>
-                              <ul>
-                                <li>Greatest properly off ham exercise all.</li>
-                                <li>
-                                  Unsatiable invitation its possession nor off.
-                                </li>
-                                <li>
-                                  All difficulty estimating unreserved
-                                  increasing the solicitude.
-                                </li>
-                              </ul>
-                              <p>
-                                Unpleasant astonished an diminution up
-                                partiality. Noisy an their of meant. Death means
-                                up civil do an offer wound of.
-                              </p>
-                            </div>
-                            <a href="" class="button">
-                              <span class="text"></span>
-                              <span class="arrow"></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- video -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://www.youtube.com/watch?v=mkjwxmcdb0E"
-                        class="has-popup-video"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work6.jpg"
-                          alt="Infinity Logo"
-                        />
-                        <span class="info">
-                          <span class="ion ion-videocamera"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://www.youtube.com/watch?v=mkjwxmcdb0E"
-                        class="name has-popup-video"
-                        >Infinity Logo</a
-                      >
-                      <div class="category">Video</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- video -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://www.youtube.com/watch?v=mkjwxmcdb0E"
-                        class="has-popup-video"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work2.jpg"
-                          alt="Minimalism Shapes"
-                        />
-                        <span class="info">
-                          <span class="ion ion-videocamera"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://www.youtube.com/watch?v=mkjwxmcdb0E"
-                        class="name has-popup-video"
-                        >Minimalism Shapes</a
-                      >
-                      <div class="category">Video</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- content -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="#popup-f51df72994adbf9839ec420bb219671c"
-                        class="has-popup-media"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work4.jpg"
-                          alt=""
-                        />
-                        <span class="info">
-                          <span class="ion ion-images"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="#popup-f51df72994adbf9839ec420bb219671c"
-                        class="name has-popup-media"
-                        >Normalcy Web Design</a
-                      >
-                      <div class="category">Design</div>
-                    </div>
-                    <div
-                      id="popup-f51df72994adbf9839ec420bb219671c"
-                      class="popup-box mfp-fade mfp-hide"
-                    >
-                      <div class="content">
-                        <div class="image">
-                          <img
-                            src="https://ryan-cv-hugo.netlify.app/images/works/work4.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="desc">
-                          <div class="post-box">
-                            <h1>Normalcy Web Design</h1>
-                            <div class="blog-detail">Design</div>
-                            <div class="blog-content">
-                              <p>
-                                So striking at of to welcomed resolved.
-                                Northward by described up household therefore
-                                attention. Excellence decisively nay man yet
-                                impression for contrasted remarkably.
-                              </p>
-                              <p>
-                                Forfeited you engrossed but gay sometimes
-                                explained. Another as studied it to evident.
-                                Merry sense given he be arise. Conduct at an
-                                replied removal an amongst. Remaining determine
-                                few her two cordially admitting old.
-                              </p>
-                              <p>
-                                ^Vestibulum ante ipsum primis in faucibus orci
-                                luctus et ultrices posuere cubilia Curae;
-                                Pellentesque suscipit.
-                              </p>
-                              <p>
-                                Tiled say decay spoil now walls meant house. My
-                                mr interest thoughts screened of outweigh
-                                removing. Evening society musical besides
-                                inhabit ye my. Lose hill well up will he over
-                                on. Increasing sufficient everything men him
-                                admiration unpleasing.
-                              </p>
-                              <ul>
-                                <li>Greatest properly off ham exercise all.</li>
-                                <li>
-                                  Unsatiable invitation its possession nor off.
-                                </li>
-                                <li>
-                                  All difficulty estimating unreserved
-                                  increasing the solicitude.
-                                </li>
-                              </ul>
-                              <p>
-                                Unpleasant astonished an diminution up
-                                partiality. Noisy an their of meant. Death means
-                                up civil do an offer wound of.
-                              </p>
-                            </div>
-                            <a href="" class="button">
-                              <span class="text"></span>
-                              <span class="arrow"></span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- music -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true"
-                        class="has-popup-music"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work7.jpg"
-                          alt="OYYI Mobile App"
-                        />
-                        <span class="info">
-                          <span class="ion ion-music-note"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true"
-                        class="name has-popup-music"
-                        >OYYI Mobile App</a
-                      >
-                      <div class="category">Music</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- photo -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/images/works/work5.jpg"
-                        class="has-popup-image"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work5.jpg"
-                          alt="RETR Style"
-                        />
-                        <span class="info">
-                          <span class="ion ion-image"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/images/works/work5.jpg"
-                        class="name has-popup-image"
-                        >RETR Style</a
-                      >
-                      <div class="category">Photo</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- music -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true"
-                        class="has-popup-music"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work3.jpg"
-                          alt="Staircase"
-                        />
-                        <span class="info">
-                          <span class="ion ion-music-note"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://w.soundcloud.com/player/?visual=true&amp;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&amp;show_artwork=true"
-                        class="name has-popup-music"
-                        >Staircase</a
-                      >
-                      <div class="category">Music</div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- photo -->
-                <div
-                  class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h"
-                >
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/images/works/work1.jpg"
-                        class="has-popup-image"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/works/work1.jpg"
-                          alt="ZOSS Clothing Logo"
-                        />
-                        <span class="info">
-                          <span class="ion ion-image"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/images/works/work1.jpg"
-                        class="name has-popup-image"
-                        >ZOSS Clothing Logo</a
-                      >
-                      <div class="category">Photo</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="clear"></div>
-              </div>
+              <div class="clear"></div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="card-inner" id="blog-card">
-          <div class="card-wrap">
-            <!-- Blog -->
-            <div class="content blog">
-              <div class="title">Latest Posts</div>
+      <div class="card-inner" id="contact-card">
+        <div class="card-wrap">
+          <div class="content contacts">
+            <div class="title">Get in Touch</div>
 
-              <div
-                class="row border-line-v post-items"
-                data-page="1"
-                data-total="3"
-              >
-                <div class="col col-d-6 col-t-6 col-m-12 post-item">
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/ui-ux-conference-at-lviv-2022/"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/blog/blog2.jpg"
-                          alt="UI &amp; UX Conference at Lviv 2022"
-                        />
-                        <span class="info">
-                          <span class="ion ion-document-text"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/ui-ux-conference-at-lviv-2022/"
-                        ><span class="date">September 16, 2020</span></a
-                      >
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/ui-ux-conference-at-lviv-2022/"
-                        class="name"
-                        >UI &amp; UX Conference at Lviv 2022</a
-                      >
-                      <div class="category">Travel</div>
-                    </div>
-                  </div>
+            <div class="row">
+              <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                <div
+                  class="map"
+                  id="map"
+                  data-lat="40.773328"
+                  data-long="-73.960088"
+                  data-zoom="14"
+                ></div>
+
+                <div class="info-list">
+                  <ul>
+                    <li><strong>Address: </strong> California, USA</li>
+
+                    <li><strong>Email: </strong> adlard@example.com</li>
+
+                    <li><strong>Phone: </strong> &#43;123 654 78900</li>
+
+                    <li><strong>Freelance: </strong> Available</li>
+                  </ul>
                 </div>
-
-                <div class="col col-d-6 col-t-6 col-m-12 post-item">
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/how-to-become-acreative-designer/"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/blog/blog3.jpg"
-                          alt="How to become a creative designer"
-                        />
-                        <span class="info">
-                          <span class="ion ion-document-text"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/how-to-become-acreative-designer/"
-                        ><span class="date">July 15, 2020</span></a
-                      >
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/how-to-become-acreative-designer/"
-                        class="name"
-                        >How to become a creative designer</a
-                      >
-                      <div class="category">Documentation</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col col-d-6 col-t-6 col-m-12 post-item">
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designers-thoughts-about-mobile-ui/"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/blog/blog1.jpg"
-                          alt="Designers thoughts about mobile UI templates"
-                        />
-                        <span class="info">
-                          <span class="ion ion-document-text"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designers-thoughts-about-mobile-ui/"
-                        ><span class="date">July 14, 2020</span></a
-                      >
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designers-thoughts-about-mobile-ui/"
-                        class="name"
-                        >Designers thoughts about mobile UI templates</a
-                      >
-                      <div class="category">Travel</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col col-d-6 col-t-6 col-m-12 post-item">
-                  <div class="box-item">
-                    <div class="image">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designer-conference-at-florida-2020/"
-                      >
-                        <img
-                          src="https://ryan-cv-hugo.netlify.app/images/blog/blog1.jpg"
-                          alt="Designer Conference at Florida, USA 2020"
-                        />
-                        <span class="info">
-                          <span class="ion ion-document-text"></span>
-                        </span>
-                      </a>
-                    </div>
-                    <div class="desc">
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designer-conference-at-florida-2020/"
-                        ><span class="date">July 13, 2020</span></a
-                      >
-                      <a
-                        href="https://ryan-cv-hugo.netlify.app/blog/designer-conference-at-florida-2020/"
-                        class="name"
-                        >Designer Conference at Florida, USA 2020</a
-                      >
-                      <div class="category">Documentation</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="clear"></div>
               </div>
+              <div class="clear"></div>
             </div>
           </div>
-        </div>
 
-        <div class="card-inner" id="contact-card">
-          <div class="card-wrap">
-            <div class="content contacts">
-              <div class="title">Get in Touch</div>
+          <div class="content contacts">
+            <div class="title">About Me</div>
 
-              <div class="row">
-                <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                  <div
-                    class="map"
-                    id="map"
-                    data-lat="40.773328"
-                    data-long="-73.960088"
-                    data-zoom="14"
-                  ></div>
-
-                  <div class="info-list">
-                    <ul>
-                      <li><strong>Address: </strong> California, USA</li>
-
-                      <li><strong>Email: </strong> adlard@example.com</li>
-
-                      <li><strong>Phone: </strong> &#43;123 654 78900</li>
-
-                      <li><strong>Freelance: </strong> Available</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="clear"></div>
-              </div>
-            </div>
-
-            <div class="content contacts">
-              <div class="title">About Me</div>
-
-              <div class="row">
-                <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                  <div class="contact_form">
-                    <form
-                      id="cform"
-                      action="https://formspree.io/f/meqnbjzk"
-                      method="POST"
-                    >
-                      <div class="row">
-                        <div class="col col-d-6 col-t-6 col-m-12">
-                          <div class="group-val">
-                            <input
-                              type="text"
-                              name="name"
-                              placeholder="Full Name"
-                              id="name"
-                            />
-                          </div>
-                        </div>
-                        <div class="col col-d-6 col-t-6 col-m-12">
-                          <div class="group-val">
-                            <input
-                              type="text"
-                              name="email"
-                              placeholder="Email Address"
-                              id="email"
-                            />
-                          </div>
-                        </div>
-                        <div class="col col-d-12 col-t-12 col-m-12">
-                          <div class="group-val">
-                            <textarea
-                              name="message"
-                              placeholder="Your Message"
-                              id="message"
-                            ></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="align-left">
-                        <a
-                          href="#"
-                          class="button"
-                          onclick="$('#cform').submit(); return false;"
-                        >
-                          <span class="text">Send Message</span>
-                          <span class="arrow"></span>
-                        </a>
-                      </div>
-                    </form>
-                  </div>
-                  <div
-                    class="alert-success"
-                    id="formAlertSuccess"
-                    style="display: none"
+            <div class="row">
+              <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+                <div class="contact_form">
+                  <form
+                    id="cform"
+                    action="https://formspree.io/f/meqnbjzk"
+                    method="POST"
                   >
-                    <p>Thanks, your message is sent successfully.</p>
-                  </div>
+                    <div class="row">
+                      <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="group-val">
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="Full Name"
+                            id="name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col col-d-6 col-t-6 col-m-12">
+                        <div class="group-val">
+                          <input
+                            type="text"
+                            name="email"
+                            placeholder="Email Address"
+                            id="email"
+                          />
+                        </div>
+                      </div>
+                      <div class="col col-d-12 col-t-12 col-m-12">
+                        <div class="group-val">
+                          <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            id="message"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="align-left">
+                      <a
+                        href="#"
+                        class="button"
+                        onclick="$('#cform').submit(); return false;"
+                      >
+                        <span class="text">Send Message</span>
+                        <span class="arrow"></span>
+                      </a>
+                    </div>
+                  </form>
                 </div>
-                <div class="clear"></div>
+                <div
+                  class="alert-success"
+                  id="formAlertSuccess"
+                  style="display: none"
+                >
+                  <p>Thanks, your message is sent successfully.</p>
+                </div>
               </div>
+              <div class="clear"></div>
             </div>
           </div>
         </div>
@@ -1652,6 +1179,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="/assets/js/main.js"></script>
+
     <script src="https://ryan-cv-hugo.netlify.app/plugins/search/simple-search.js"></script>
 
     <script src="https://ryan-cv-hugo.netlify.app/plugins/validate/jquery.validate.min.js"></script>

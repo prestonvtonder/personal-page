@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  loadTheme();
+});
+
 $(window).on('load', function () {
   $('.preloader__loader path:last-child').animate({strokeDashoffset: '0'}, {
     progress: function (_animation, progress, _msRemaining) {
@@ -151,4 +155,55 @@ $(window).on('load', function () {
     collapseInfoBar();
   })
 
+  $('.theme-btn').click(function (e) {
+    e.preventDefault();
+    toggleTheme();
+  })
+
 });
+
+function toggleTheme() {
+  let currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'light') {
+    toggleDarkThemeStyleSheets(true);
+    $('.fa-sun').hide();
+    $('.background.gradient').hide();
+    $('.fa-moon').show();
+    $('.blurred-background').show();
+    currentTheme = 'dark';
+  } else if (currentTheme === 'dark') {
+    toggleDarkThemeStyleSheets(false);
+    $('.fa-moon').hide();
+    $('.blurred-background').hide();
+    $('.fa-sun').show();
+    $('.background.gradient').show();
+    currentTheme = 'light';
+  }
+  localStorage.setItem('theme', currentTheme);
+}
+
+function toggleDarkThemeStyleSheets(isEnabled) {
+  const darkThemeHref = "/assets/css/dark.css";
+  const minimalSkinThemeHref = "/assets/css/minimal.css";
+  toggleStyleSheet(darkThemeHref, isEnabled);
+  toggleStyleSheet(minimalSkinThemeHref, isEnabled);
+}
+
+function toggleStyleSheet(href, isEnabled) {
+    $(`link[href="${href}"]`)
+      .prop('disabled', !isEnabled);
+}
+
+function loadTheme() {
+  let currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'light') {
+    $('.fa-moon').hide();
+    $('.blurred-background').hide();
+  } else if (currentTheme === 'dark') {
+    toggleDarkThemeStyleSheets(true);
+    $('.fa-sun').hide();
+    $('.blurred-background').hide();
+    $('.fa-moon').show();
+    $('.background.gradient').show();
+  }
+}
