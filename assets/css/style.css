@@ -1933,11 +1933,11 @@ input[type=file] {
 }
 
 .card-started .profile.no-photo .title {
-    margin-top: 240px
+    margin-top: 390px
 }
 
 .card-started .profile.no-photo .slide {
-    height: 57%
+    height: 70%
 }
 
 .card-started .profile .slide {
@@ -5749,4 +5749,35 @@ a.prev.page-numbers:hover {
 
 .prev.page-numbers:hover:before {
     left: -4px
+}
+
+svg {
+    max-width: 80%;
+    opacity: .4;
+    transition: all .3s ease 0s;
+}
+
+svg:hover {
+    opacity: 1;
+}
+
+svg:hover .watermark {
+    font-size: 2.8em;
+}
+
+.watermark {
+    fill: #78cc6d;
+    font-size: 2.5em;
+    font-family: poppins;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    transform: rotate(-45deg) translateX(-100px) translateY(40px);
+}
+
+.slide {
+    background-image: url('/assets/images/bg.jpeg');
+}
+
+.slide:hover {
+    cursor: pointer;
 }

@@ -567,3 +567,7 @@ input[type="submit"]:hover {
 .revs-item .info .company {
 	color: #999999;
 }
+
+.watermark {
+    fill: #edff20 !important;
+}
