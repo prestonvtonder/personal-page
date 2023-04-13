@@ -1056,16 +1056,18 @@ input[type=radio] {
 }
 
 input[type=checkbox] {
-    -webkit-appearance: checkbox
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
 }
 
 input[type=radio] {
-    -webkit-appearance: radio
+    -webkit-appearance: radio;
+    appearance: radio;
 }
 
 select {
     width: 100%;
-    height: 50px
+    height: 50px;
 }
 
 input[type=file] {
@@ -4678,7 +4680,8 @@ input[type=file] {
     padding: 0 50px 0 15px;
     box-shadow: none;
     font-weight: 400;
-    -webkit-appearance: textfield
+    -webkit-appearance: textfield;
+    appearance: textfield;
 }
 
 .search-form input.search-submit {
