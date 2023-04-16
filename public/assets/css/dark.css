@@ -122,18 +122,14 @@ textarea:focus:-ms-input-placeholder {
   background-color: #edff20 !important;
 }
 
-.header .theme-btn {
+.theme-btn {
+	box-shadow: none;
 	color: rgba(255, 255, 255, 0.85);
-	background: #31313a;
+	background: #edff20;
 }
 
-.header .theme-btn a {
-	color: rgba(255, 255, 255, 0.85);
-	background: #31313a;
-}
-
-.header .theme-btn span, .header .theme-btn span:before, .header .theme-btn span:after {
-  color: rgba(255, 255, 255, 0.85);
+.theme-btn span, .theme-btn span:before, .theme-btn span:after {
+  color: #323232;
 }
 
 .header .top-menu ul li a:before {

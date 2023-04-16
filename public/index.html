@@ -82,6 +82,13 @@
   </head>
 
   <body class="home">
+    <div class="theme-btn">
+      <a href="#">
+        <span class="icon fa fa-sun"></span>
+        <span class="icon fa fa-moon"></span>
+      </a>
+    </div>
+
     <div class="page new-skin">
       <!-- Preloader -->
       <div class="preloader">
@@ -267,12 +274,6 @@
         data-animation-out="fadeOut"
       >
         <header class="header">
-          <div class="theme-btn">
-            <a href="#">
-              <span class="icon fa fa-sun"></span>
-              <span class="icon fa fa-moon"></span>
-            </a>
-          </div>
           <!-- menu -->
           <div class="top-menu menu-minimal">
             <ul>
@@ -821,105 +822,6 @@
           </div>
         </div>
       </div>
-
-      <div class="card-inner" id="contact-card">
-        <div class="card-wrap">
-          <div class="content contacts">
-            <div class="title">Get in Touch</div>
-
-            <div class="row">
-              <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                <div
-                  class="map"
-                  id="map"
-                  data-lat="40.773328"
-                  data-long="-73.960088"
-                  data-zoom="14"
-                ></div>
-
-                <div class="info-list">
-                  <ul>
-                    <li><strong>Address: </strong> California, USA</li>
-
-                    <li><strong>Email: </strong> adlard@example.com</li>
-
-                    <li><strong>Phone: </strong> &#43;123 654 78900</li>
-
-                    <li><strong>Freelance: </strong> Available</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-
-          <div class="content contacts">
-            <div class="title">About Me</div>
-
-            <div class="row">
-              <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                <div class="contact_form">
-                  <form
-                    id="cform"
-                    action="https://formspree.io/f/meqnbjzk"
-                    method="POST"
-                  >
-                    <div class="row">
-                      <div class="col col-d-6 col-t-6 col-m-12">
-                        <div class="group-val">
-                          <input
-                            type="text"
-                            name="name"
-                            placeholder="Full Name"
-                            id="name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col col-d-6 col-t-6 col-m-12">
-                        <div class="group-val">
-                          <input
-                            type="text"
-                            name="email"
-                            placeholder="Email Address"
-                            id="email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col col-d-12 col-t-12 col-m-12">
-                        <div class="group-val">
-                          <textarea
-                            name="message"
-                            placeholder="Your Message"
-                            id="message"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="align-left">
-                      <a
-                        href="#"
-                        class="button"
-                        onclick="$('#cform').submit(); return false;"
-                      >
-                        <span class="text">Send Message</span>
-                        <span class="arrow"></span>
-                      </a>
-                    </div>
-                  </form>
-                </div>
-                <div
-                  class="alert-success"
-                  id="formAlertSuccess"
-                  style="display: none"
-                >
-                  <p>Thanks, your message is sent successfully.</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Scripts -->
@@ -949,12 +851,6 @@
     <script src="https://ryan-cv-hugo.netlify.app/plugins/isotope/isotope.pkgd.js"></script>
     <script src="https://ryan-cv-hugo.netlify.app/plugins/typed/typed.js"></script>
     <script src="https://ryan-cv-hugo.netlify.app/plugins/rrssb/rrssb.js"></script>
-
-    <!-- Google map api -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
-
-    <script src="https://ryan-cv-hugo.netlify.app/js/form-handler.min.js"></script>
-
     <script src="https://ryan-cv-hugo.netlify.app/js/common.min.js"></script>
   </body>
 </html>

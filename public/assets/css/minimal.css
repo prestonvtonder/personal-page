@@ -276,7 +276,6 @@
 
 /* - Minimal */
 
-body .header .theme-btn,
 body .card-started .profile,
 body .card-started .profile .slide:before,
 body .card-started .profile .slide:after,
@@ -290,7 +289,6 @@ body .content-sidebar,
 body .profile .main-menu-fixed:before,
 body .header .cart-btn,
 body .header .cart-btn .cart-widget,
-body .header .theme-btn,
 body .header .top-menu {
     background: #191919 !important;
 }
@@ -352,12 +350,6 @@ body .header .top-menu {
 .card-started .profile .lnk.solid-style .ion,
 .header .top-menu.menu-minimal ul li a .link {
     background: #edff20 !important;
-}
-
-.header .theme-btn:hover span,
-.header .theme-btn:hover span:before,
-.header .theme-btn:hover span:after {
-  color: #edff20;
 }
 
 .lnk:hover,
@@ -525,12 +517,7 @@ textarea:focus,
 .header .cart-btn .cart-icon .cart-count,
 .header .top-menu.menu-minimal ul li a .link,
 .header .top-menu.menu-minimal ul li:hover a .link {
-    color: #323232!important;
-}
-
-.layout-rounded-style .header .theme-btn {
-	border-radius: 26px;
-	-webkit-border-radius: 26px;
+  color: #edff20;
 }
 
 .layout-rounded-style .header .cart-btn {
@@ -643,6 +630,7 @@ textarea:focus,
 }
 
 .layout-rounded-style .header .top-menu.menu-minimal ul li a .link {
+  color: #323232 !important;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
@@ -735,13 +723,19 @@ textarea:focus,
 
 @media (max-width: 560px) {
   .container {
-    padding: 160px 0 0;
+    padding: 100px 0 0;
+  }
+  .layout-rounded-style .header .top-menu.menu-minimal ul li a .link {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  .layout-rounded-style .header .top-menu.menu-minimal ul li:hover a .link {
+    color: #edff20 !important;
   }
   .header .top-menu.menu-minimal ul li a .link {
     position: relative !important;
     left: 0 !important;
     top: 0 !important;
-    color: #fff !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     background: #fff !important;
     margin-top: 5px !important;
     opacity: 1 !important;
