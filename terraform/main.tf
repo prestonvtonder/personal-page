@@ -13,13 +13,15 @@ resource "aws_s3_bucket_acl" "default" {
     acl         = "private"
 }
 
-resource "aws_s3_bucket_policy" "default" {
-    bucket = aws_s3_bucket.default.id
-    policy = data.aws_iam_policy_document.default.json
+resource "aws_s3_bucket_policy" "cloudfront_s3" {
+    provider = aws.af_south_1
+    bucket   = aws_s3_bucket.default.id
+    policy   = data.aws_iam_policy_document.cloudfront_s3.json
 }
 
 resource "aws_s3_bucket_website_configuration" "default" {
-    bucket = aws_s3_bucket.default.id
+    provider = aws.af_south_1
+    bucket   = aws_s3_bucket.default.id
 
     index_document {
         suffix = "index.html"
@@ -37,15 +39,12 @@ resource "aws_acm_certificate" "default" {
 }
 
 resource "aws_cloudfront_origin_access_control" "default" {
+    provider                          = aws.af_south_1
     name                              = "default"
     description                       = "Default Policy"
     origin_access_control_origin_type = "s3"
     signing_behavior                  = "always"
     signing_protocol                  = "sigv4"
-}
-
-resource "aws_cloudfront_origin_access_identity" "default" {
-    comment = "AWS S3"
 }
 
 resource "aws_cloudfront_distribution" "default" {
